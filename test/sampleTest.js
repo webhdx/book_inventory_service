@@ -24,6 +24,7 @@ describe('Stock inventory', function () {
 
         request(app)
             .get('/stock/1234')
+            .set('Accept', 'application/json')
             .expect(200, '1', done);
     });
 });
